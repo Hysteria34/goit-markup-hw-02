@@ -11,24 +11,26 @@
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     letter-spacing: 0.03em;
-    color: black;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 145px;
-    height: 31px;
-    margin-left: 215px;
+}
+.bottom{
+color: #FFFFFF;
+}
+.top{
+    color: #000000;
 }
 .header{
-    display: inline-flex;
-    align-items: center;
-    width: 1600px;
-    height: 80px;
     background-color: #ECECEC;
+    height: 80px;
 }
+
+
 .menu-navigation{
-    top: 32px;
-    margin-left: 93px;
-    word-spacing: 50px;
+    display: flex;
 }
+.menu-navigation .item:not(:last-child) {
+    margin-right: 50px;
+  }
 .menu-navigation a{
     text-decoration: none;
     font-style: normal;
@@ -36,6 +38,10 @@
     font-size: 14px;
     letter-spacing: 0.02em;
     color: black;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
 }
 .menu-navigation a:hover{
     color:#2196F3;
@@ -45,29 +51,31 @@
 }
 .menu-navigation li{
     list-style-type: none;
-    display: inline;
 }
-.contacts-navigation{
-    margin-left: auto;
-    margin-right: 215px;
+
+
+.contacts{
+    display: flex;
 }
-.contacts-navigation li{
+.contacts .item:not(:last-child){
+    margin-right: 50px;
+}
+.contacts li{
     list-style-type: none;
-    display: inline;
 }
-.contacts-navigation a{
+.contacts a{
     text-decoration: none;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
-    margin-left: 50px;
     color: #757575;
+    display: block;
 }
-.contacts-navigation a:hover{
+.contacts a:hover{
     color:#2196F3;
 }
-.contacts-navigation a:focus{
+.contacts a:focus{
     color:#2196F3;
 }
 
@@ -88,6 +96,8 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+
+
 }
 .hat button{
     width: 200px;
@@ -183,13 +193,7 @@
     width: 1600px;
     background-color: #2F303A;
 }
-.footer h2{
-    color: white;
-    font-family: Raleway;
-    font-weight: bold;
-    font-size: 26px;
-    letter-spacing: 0.03em;
-}
+
 .footer li{
     list-style-type: none;
 }
@@ -201,23 +205,25 @@
     color: #FFFFFF;
 }
 .footer a{
+   
+    }
+.footer-contacts a:hover{
+    color: rgba(255, 255, 255, 1);
+}
+.footer-contacts a:focus{
+    color: rgba(255, 255, 255, 1);
+}
+.footer span{
+    color: #2196F3;
+}
+.footer-contacts a{
     text-decoration: none;
     color: #757575;
     font-weight: normal;
     font-size: 14px;
     line-height: 171%;
     letter-spacing: 0.03em;
-    }
-.footer a:hover{
-    color: rgba(255, 255, 255, 1);
 }
-.footer a:focus{
-    color: rgba(255, 255, 255, 1);
-}
-.footer span{
-    color: #2196F3;
-}
-
 
 
 .portfolio-menu li{
